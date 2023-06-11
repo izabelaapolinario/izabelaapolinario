@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pesquisa</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+    <link rel="icon" type="image/x-icon" href="imagens/logo.jpg">
+    <link rel="icon" type="image/x-icon" href="imagens/logo.jpg">
+  <title>Online Store</title>
+<style>
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    white-space: nowrap;
+  }
+  
+  .logo {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    /* Estilos para telas pequenas */
+    .navbar-nav {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  h1 {
+    font-style: inherit;
+    color: #020202;
+  }
+  li{
+    font-weight:bold;
+    color: #070707
+    
+  }
+  .search-input-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+          }
+          
+          .search-input {
+            margin-right: 10px;
+          }
+          
+          .search-results {
+            margin-top: 20px;
+          }
+  .search-input-container {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+          }
+  
+          .search-input {
+              margin-right: 10px;
+          }
+  
+          .search-results {
+              margin-top: 20px;
+          }
+          .navbar-nav {
+            justify-content: flex-start;
+  
+  }
+  p{
+  color: #000;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 5px;
+  }
+  .nav-link {
+          color: black;
+      }
+  
+        </style>
+    
+    <link rel="icon" type="image/x-icon" href="imagens/logo.jpg">
+    <title>Online Store</title>
+  
+                              <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="imagens/11zon_cropped.png" alt="logo" width="100" height="80">
+        </div>
+        <ul class="nav">
+  
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pesquisa.html">Filtrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+        
+    </nav>
+  </header>
+  
+        <link rel="stylesheet" type="text/css" href="design.css">
+  
+  
+<br>
+
+    
+<br>
+
+      </nav>
+      
+  </head>
+  <body>
+    <body>
+
+
+      <style>
+        h1{
+          text-align: center;
+
+        }
+        p{
+          text-align: center;
+
+        }
+        
+        .search-input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .search-input-container input[type="text"] {
+            margin-right: 10px;
+        }
+      </style>
+      <h1>Pesquisa de Produtos</h1>
+      <br>
+      <div class="search-input-container">
+      &emsp; <input type="text" id="searchInput" placeholder="Digite o nome do produto">
+      <button onclick="search()">Buscar</button>
+    </div>
+      <div id="searchResults">
+        <script src="pesquisa.js"></script>
+          <!-- Os resultados da pesquisa serão exibidos aqui -->
+      </div>
+
+
+      
+      <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="priceFromInput" class="form-label">Preço mínimo:</label>
+                    <input type="number" class="form-control" id="priceFromInput" placeholder="Preço mínimo">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="priceToInput" class="form-label">Preço máximo:</label>
+                    <input type="number" class="form-control" id="priceToInput" placeholder="Preço máximo">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="categorySelect" class="form-label">Categoria:</label>
+                    <select class="form-select" id="categorySelect">
+                        <option value="">Todas as categorias</option>
+                        <option value="electronics">Eletrônicos</option>
+                        <option value="jewelery">Joias</option>
+                        <option value="men's clothing">Roupas masculinas</option>
+                        <option value="women's clothing">Roupas femininas</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary" id="filterButton">Filtrar</button>
+            </div>
+        </div>
+    
+        <div class="row mt-4" id="productsSection">
+            <!-- Os produtos filtrados serão exibidos aqui -->
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      // Função para buscar os produtos da API
+      function getProducts() {
+          return axios.get('https://fakestoreapi.com/products')
+              .then(response => response.data)
+              .catch(error => console.error('Erro ao buscar produtos:', error));
+      }
+  
+      // Função para filtrar os produtos com base nos critérios
+      function filterProducts(products, priceFrom, priceTo, category) {
+          return products.filter(product => {
+              // Verifica se o preço está dentro da margem definida
+              if (priceFrom && product.price < priceFrom) {
+                  return false;
+              }
+              if (priceTo && product.price > priceTo) {
+                  return false;
+              }
+              // Verifica se a categoria corresponde à selecionada
+              if (category && product.category !== category) {
+                  return false;
+              }
+              return true;
+          });
+        }
+
+// Função para exibir os produtos filtrados na página
+function displayProducts(products) {
+    const productsSection = document.getElementById('productsSection');
+    productsSection.innerHTML = '';
+
+    if (products.length === 0) {
+        const noResultsMessage = document.createElement('p');
+        noResultsMessage.textContent = 'Nenhum produto encontrado.';
+        productsSection.appendChild(noResultsMessage);
+    } else {
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.classList.add('col-md-4','mb-4');
+            productCard.innerHTML = `
+                <div class="card">
+                    <img src="${product.image}" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">Preço: $${product.price}</p>
+                        <p class="card-text">Descrição: ${product.description}</p>
+                        <p class="card-text">Categoria: ${product.category}</p>
+                        <a href="detalhes.html?id=${product.id}" class="btn btn-primary">Mais detalhes</a>
+                    </div>
+                </div>
+            `;
+            productsSection.appendChild(productCard);
+        });
+    }
+}
+
+// Função para filtrar os produtos e exibir os resultados
+function filterAndDisplayProducts() {
+    const priceFromInput = document.getElementById('priceFromInput');
+    const priceToInput = document.getElementById('priceToInput');
+    const categorySelect = document.getElementById('categorySelect');
+
+    const priceFrom = priceFromInput.value ? parseFloat(priceFromInput.value) : null;
+    const priceTo = priceToInput.value ? parseFloat(priceToInput.value) : null;
+    const category = categorySelect.value !== '' ? categorySelect.value : null;
+
+    getProducts()
+        .then(products => {
+            const filteredProducts = filterProducts(products, priceFrom, priceTo, category);
+            displayProducts(filteredProducts);
+        })
+        .catch(error => {
+            console.error('Erro ao buscar produtos:', error);
+        });
+}
+
+// Adicionar evento de clique ao botão de filtro
+const filterButton = document.getElementById('filterButton');
+filterButton.addEventListener('click', filterAndDisplayProducts);
+
+// Chamar a função de exibição inicialmente para mostrar todos os produtos
+getProducts()
+    .then(products => {
+        displayProducts(products);
+    })
+    .catch(error => {
+        console.error('Erro ao buscar produtos:', error);
+    });
+ </script> 
+
+    
+      <link rel="stylesheet" type="text/css" href="design.css">
+
+  </body>
+</html>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+div.tela{
+    background-color: #5f3d75;
+    color:white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+div.row{
+    background-color: #92cce1;
+    text-align: center;
+}
+body{
+    background-color: #76cdd0f1;
+}
+footer{
+    color: #67686b;
+    background-color: #a9edea;
+}
+button{
+color: #f3eded;
+    margin:-2px;
+  
+  }
+  .navbar{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    color: #91b9aa;
+}
+
+.card img {
+margin-top: 15px;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+max-width: 300px;
+max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+   
+}
+h1 {
+    font-style: inherit;
+      color: #020202;
+    text-align: center;
+  }
+  li{
+    font-weight:bold;
+      color: #070707
+    
+  }
+.card {
+    margin-left: 20px;
+    width: 400px;
+    background: #feffff;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.centered-container {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    height: 100vh; /* Define a altura do container para ocupar toda a altura da janela */
+  }
+  
+ 

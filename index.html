@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+  
+  /* Estilos para todas as telas */
+  
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  /* Estilos para telas pequenas */
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+
+h1 {
+  font-style: inherit;
+	color: #020202;
+}
+li{
+  font-weight:bold;
+	color: #070707
+  
+}
+.search-input-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 10px;
+        }
+        
+        .search-input {
+          margin-right: 10px;
+        }
+        
+        .search-results {
+          margin-top: 20px;
+        }
+.search-input-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .search-input {
+            margin-right: 10px;
+        }
+
+        .search-results {
+            margin-top: 20px;
+        }
+        .navbar-nav {
+          justify-content: flex-start;
+
+}
+p{
+color: #000;
+}
+.navbar-nav .nav-item {
+  margin-right: 5px;
+}
+.nav-link {
+        color: black;
+    }
+
+      </style>
+  
+  <link rel="icon" type="image/x-icon" href="imagens/logo.jpg">
+  <title>Online Store</title>
+
+                            <header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="imagens/11zon_cropped.png" alt="logo" width="100" height="80">
+      </div>
+      <ul class="nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pesquisa.html">Filtrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+        </ul>
+      
+    <p> Izabela Apolinário do nascimento <br> Análise e Desenvolvimento de Sistemas  <br>  819747</p>
+  </nav>
+</header>
+
+        <link rel="stylesheet" type="text/css" href="design.css">
+    </header>
+    <div class="search-input-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar">
+      <button onclick="search()">Buscar</button>
+  </div>
+    <div id="searchResults">
+      <script src="pesquisa.js"></script>
+        <!-- Os resultados da pesquisa serão exibidos aqui -->
+    </div>
+</nav>       
+                                
+
+    
+  
+  
+  
+       
+
+                              </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+</head>
+<body>
+  
+    <H1> Produtos</H1>
+    <div class="container-fluid">
+        <div class="row" id="tela">
+        </div>
+    </div>
+    
+
+  
+    <script src="fonte.js"></script>
+
+    <script src="pesquisa.js"></script> 
+   
+    
+</body>
+</html>

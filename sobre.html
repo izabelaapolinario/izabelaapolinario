@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pesquisa</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+    <link rel="icon" type="image/x-icon" href="imagens/logo.jpg">
+    <style>
+      /* Estilos CSS para as telas */
+      .home-screen {
+        display: block;
+      }
+      
+      .search-screen {
+        display: none;
+      }
+    
+
+
+
+    </style>
+
+  <title>Online Store</title>
+  <style>
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .navbar-nav .nav-item {
+      margin-right: 10px;
+    }
+    
+    .navbar-nav .nav-link {
+      white-space: nowrap;
+    }
+    
+    .logo {
+      margin-right: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      /* Estilos para telas pequenas */
+      .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    
+      .navbar-nav .nav-item {
+        margin-bottom: 10px;
+      }
+    }
+    
+    
+    h1 {
+      font-style: inherit;
+      color: #020202;
+    }
+    li{
+      font-weight:bold;
+      color: #070707
+      
+    }
+    .search-input-container {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-bottom: 10px;
+            }
+            
+            .search-input {
+              margin-right: 10px;
+            }
+            
+            .search-results {
+              margin-top: 20px;
+            }
+    .search-input-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+    
+            .search-input {
+                margin-right: 10px;
+            }
+    
+            .search-results {
+                margin-top: 20px;
+            }
+            .navbar-nav {
+              justify-content: flex-start;
+    
+    }
+    p{
+    color: #000;
+    }
+    .navbar-nav .nav-item {
+      margin-right: 5px;
+    }
+    .nav-link {
+            color: black;
+        }
+    
+          </style>
+      
+      <link rel="icon" type="image/x-icon" href="imagens/logo.jpg">
+      <title>Online Store</title>
+    
+                                <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="imagens/11zon_cropped.png" alt="logo" width="100" height="80">
+          </div>
+          <ul class="nav">
+    
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="pesquisa.html">Filtrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+            </ul>
+          
+      </nav>
+    </header>
+    
+        </nav>
+        </div>
+        <link rel="stylesheet" type="text/css" href="design.css">
+    </header>
+</nav>       
+  <body>
+    <br>
+    <h3 class="text-center">Sobre a Online Store:</h3>
+   <br>
+   
+    <p>
+ &nbsp;&nbsp;&nbsp;&nbsp; Bem-vindo à nossa loja online, o destino perfeito para encontrar os melhores produtos e soluções para todas as suas necessidades! Aqui, oferecemos uma ampla variedade de itens cuidadosamente selecionados, 
+ tudo disponível a apenas alguns cliques de distância. <br>
+ <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; Nossa missão é tornar sua experiência de compras online o mais agradável e conveniente possível.Nosso site foi projetado com a facilidade de uso em mente, para que você possa navegar facilmente
+ por nossas categorias e encontrar exatamente o que está procurando. Seja para presentear alguém especial, renovar o visual, cuidar da sua saúde e bem-estar,temos tudo o que você precisa em um só lugar.<br>
+ <br>   
+ &nbsp;&nbsp;&nbsp;&nbsp; Na nossa loja online, nos esforçamos para fornecer produtos da mais alta qualidade. Cada item em nosso catálogo é selecionado com base em critérios rigorosos para garantir que você receba apenas o
+ melhor. Nossos especialistas estão sempre em busca das últimas tendências e inovações, para que você possa ter acesso às últimas novidades do mercado.<br>
+ <br>  
+ &nbsp;&nbsp;&nbsp;&nbsp; Além da qualidade dos produtos, também nos preocupamos com sua satisfação geral. Por isso, investimos no atendimento ao cliente excepcional. Nossa equipe está pronta para ajudá-lo em todas as etapas
+ do processo, desde a seleção do produto certo até o pós-venda. Queremos que você se sinta valorizado e apoiado em todas as interações com nossa loja.<br>
+ <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; E como sabemos que a segurança e a privacidade são essenciais nas compras online, implementamos medidas de proteção para garantir a confidencialidade dos seus dados pessoais. Você pode
+ fazer suas compras com tranquilidade, sabendo que seus detalhes estão seguros em nossos servidores.<br>
+ <br>  
+ &nbsp;&nbsp;&nbsp;&nbsp; Agradecemos por escolher nossa loja online como seu destino de compras. Estamos ansiosos para servi-lo da melhor forma possível e proporcionar uma experiência de compra online
+  inesquecível. Comece a explorar nosso catálogo agora e descubra a conveniência de comprar com apenas alguns cliques!</p> 
+
+    <p class="font-italic"> Referência: <a href="https://fakestoreapi.com/products" title="Produtos">Dados dos Produtos</a></p>
+  </body>
+</html>
+    
+    
